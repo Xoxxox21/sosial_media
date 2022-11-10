@@ -1,7 +1,7 @@
+from datetime import datetime
 from django.db import models
 from django.contrib.auth import get_user_model
 import uuid
-from datetime import datetime
 
 User = get_user_model()
 
@@ -12,10 +12,10 @@ class Profile(models.Model):
     bio = models.TextField(blank=True)
     profileimg = models.ImageField(upload_to='profile_images', default='media/images.png')
     location = models.CharField(max_length=100, blank=True)
-    
+
     def __str__(self):
         return self.user.username
-    
+
 class Post(models.Model):
     id= models.UUIDField(primary_key=True, default = uuid.uuid4)
     user = models.CharField(max_length=100)
@@ -23,6 +23,13 @@ class Post(models.Model):
     caption = models.TextField()
     create_at = models.DateTimeField(default=datetime.now)
     no_of_likes = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.user
+
+class Like_post(models.Model):
+    post_id = models.CharField(max_length=500)
+    username = models.CharField(max_length=100)
 
     def __str__(self):
         return self.user

@@ -76,9 +76,9 @@
 4. user can upload feed on his account.
 
 <br/>
-<!-- ## **Preview** -->
+<!-- ## **Preview**
 
-<!-- <p align="center">
+<p align="center">
 <img src="static/images/dashboard.png" width="70%"/><br />
 <img src="static/images/change_pass.png" width="70%"/><br />
 <img src="static/images/kelola_sales.png" width="70%"/><br />
@@ -87,5 +87,5 @@
 <img src="static/images/distribusi.png" width="70%"/><br />
 <img src="static/images/sales_hasil.png" width="70%"/><br />
 <img src="static/images/changes_sales.png" width="70%"/><br />
-</p> -->
-
+</p>
+ -->
